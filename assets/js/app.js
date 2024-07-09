@@ -1,4 +1,4 @@
-let regex = /^[a-z\s]+$/;
+const regex = /^[a-z\s]+$/;
 
 function showNoMessageStyle() {
     document.getElementById("enc-dec-text-section").style.display = "none";
@@ -17,7 +17,7 @@ function encrypt() {
     let userInput = document.getElementById("text-input").value
 
     if (userInput === '') {
-        showNoMessage();
+        showNoMessageStyle();
     } else if (regex.test(userInput)) {
         let outputMessage = userInput.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
         showOutputMessageStyle()
@@ -42,7 +42,7 @@ function decrypt() {
     let userInput = document.getElementById("text-input").value
 
     if (userInput === '') {
-        showNoMessage();
+        showNoMessageStyle();
     } else if (regex.test(userInput)) {
         let outputMessage = userInput.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
         showOutputMessageStyle()

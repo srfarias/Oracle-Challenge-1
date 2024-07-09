@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle: Encriptador de texto</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="body">
+    <main>
+        <section class="left__section">
+            <div class="alura__logo__section">
+                <img src="assets/img/alura-logo.svg" alt="Logo de Alura">
+            </div>
+            <div class="input__section">
+                <textarea class="user__text__input" id="text-input" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="user__text__input__warning">
+                    <p class="user__text__input__warning__text">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="enc__dec__buttons__section">
+                    <button class="enc__dec__buttons" id="encrypt-button" onclick="encrypt();">Encriptar</button>
+                    <button class="enc__dec__buttons" id="decrypt-button" onclick="decrypt();">Desencriptar</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="rigth__section">
+            <img class="rigth__section__images" id="rigth-section-img" src="assets/img/muneco.svg"
+                alt="Personaje de rodillas analizando un diamante con una lupa">
+            <div class="rigth__section__texts" id="rigth-section-text">
+                <p class="no__message__text">Ningún mensaje fue encontrado</p>
+                <p class="enter__message__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="hidden__output__message__section" id="enc-dec-text-section" style="display: none;">
+                <textarea class="output__message" id="enc-dec-text-output" rows="20" cols="28" readonly></textarea>
+                <button class="copy__button" id="copyButton" onclick="copyText();">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="assets/js/app.js"></script>
+
+</html>

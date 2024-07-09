@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+textarea:focus {
+    outline: 0;
+}
+
+.body {
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left__section {
+    width: 45%;
+    margin: 0 5%;
+}
+
+.alura__logo__section {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+
+.input__section {
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user__text__input {
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: #343A40;
+    width: 100% 80%;
+    border-radius: 0.5rem;
+    border: none;
+    height: 32rem;
+    width: 20rem 34rem;
+    resize: none;
+    background-color: #FFFFFF;
+}
+
+.user__text__input__warning {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: left;
+}
+
+.user__text__input__warning__text {
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.enc__dec__buttons__section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.enc__dec__buttons {
+    font-size: 1rem;
+    border-radius: 1rem;
+    height: 3rem;
+    width: 20rem;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#encrypt-button {
+    color: #FFFFFF;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+#encrypt-button:hover {
+    background-color: #114c94;
+}
+
+#decrypt-button {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+}
+
+#decrypt-button:hover {
+    background-color: #e5e6e9;
+}
+
+.rigth__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20rem;
+    height: 36rem;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    margin: 0 2%;
+    padding: 2%;
+    gap: 1rem;
+    position: relative;
+    align-self: center;
+}
+
+.rigth__section__images {
+    width: 90%;
+}
+
+.no__message__text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343A40;
+    text-align: center;
+    padding: 0 0 5% 0;
+}
+
+.enter__message__text {
+    font-size: 1rem;
+    color: #495057;
+    text-align: center;
+}
+
+.output__message {
+    font-size: 1.2rem;
+    color: #343A40;
+    border: 0;
+    border-radius: 0.5rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+.copy__button {
+    font-size: 1rem;
+    color: #0A3871;
+    background-color: #FFFFFF;
+    border: 1px solid #0A3871;
+    border-radius: 1rem;
+    padding: 0.75rem 3.8rem;
+    margin: 3rem 0 0 0;
+    height: 3rem;
+    width: 20rem;
+}
+
+.copy__button:hover {
+    background-color: #f3f3f3;
+}
+
+.hidden__output__message__section {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left__section {
+        width: 95%;
+        padding: 0;
+    }
+
+    .alura__logo__section {
+        justify-content: center;
+    }
+
+    .user__text__input {
+        height: 24rem;
+    }
+
+    .input__section {
+        padding: 10%;
+    }
+
+    .rigth__section {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 4% 4% 4% 4%;
+        margin: 0;
+        height: auto;
+        width: 70%;
+    }
+
+    .rigth__section__images {
+        display: none;
+    }
+
+    .copy__button {
+        width: 100%;
+        height: auto;
+    }
+
+    .hidden__output__message__section {
+        width: 100%;
+        height: auto;
+    }
+
+    .output__message {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: justify;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .alura__logo__section {
+        justify-content: center;
+    }
+
+    .enc__dec__buttons__section {
+        flex-direction: column;
+    }
+
+    .enc__dec__buttons {
+        width: 100%;
+    }
+
+    .left__section {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rigth__section {
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 5%;
+        margin: 0;
+        height: auto;
+        width: 65%;
+    }
+
+    .rigth__section__images {
+        display: none;
+    }
+
+    .user__text__input {
+        height: 15rem;
+    }
+
+    .hidden__output__message__section {
+        width: 100%;
+        height: auto;
+    }
+
+    .output__message {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+}
